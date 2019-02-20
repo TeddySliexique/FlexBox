@@ -1,0 +1,70 @@
+body{
+  margin: auto;
+}
+
+h1{
+  margin: 0;
+  display:block;
+  border-style: ridge;
+  text-align: center;
+  font-size: 80px;
+  line-height:150px;
+  background-color: cyan;
+}
+h2{
+  font-size: 65px;
+  line-height:0px;
+}
+h3{
+  font-size: 40px;
+}
+section{
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+  align-content: stretch;
+  flex: 1 100%;
+}
+section div{
+  border-style: ridge;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+}
+section aside{
+  width: 25em;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  flex-grow: 2;
+  border-style: ridge;
+}
+@media all and (max-width: 1050px) {
+  section{
+    flex: 3 0px;
+  }
+  .Menu{
+    order:1;
+  }
+  section div{
+    order:1;
+  }
+  .AD{
+    order:3;
+  }
+}
+@media all and (max-width: 750px) {
+
+section{
+  flex-flow: row wrap;
+}
+section div{
+  order:1;
+}
+.Menu{
+  order:2;
+}
+.AD{
+  order:3;
+}
+}

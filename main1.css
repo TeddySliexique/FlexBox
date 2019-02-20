@@ -1,0 +1,49 @@
+@font-face {
+font-family: "Beleren Bold";
+src: url("/Portfolio_2/Fonts/belerenbold.ttf");
+}
+
+body{
+  margin: auto;
+}
+
+h2{
+  display: none;
+}
+
+.menu-section{
+  position: absolute;
+  width:100%;
+  height:50px;
+  background-color: black;
+}
+
+ul{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content:space-around ;
+  justify-content: space-around;
+  list-style: none;
+  color: white;
+}
+
+ul li a {
+  font-family: "Beleren Bold";
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+@media all and (max-width: 750px) {
+
+.menu-section{
+  height: 330px;
+}
+
+ul{
+  width: 100%;
+  height: 300px;
+  flex-flow: column;
+}
+
+}
